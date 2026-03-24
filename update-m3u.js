@@ -93,7 +93,7 @@ if (result.mp3) {
 #EXTINF:-1 tvg-logo="${imageUrl}" group-title="Analiza",${emisijaInfo}
 ${result.mp3}`;
 
-  fs.writeFileSync('U_mrezi_prvog.m3u', m3uContent);
+  fs.writeFileSync('Intervju_tjedna.m3u', m3uContent);
   console.log('✅ M3U spreman s JSON nazivom!');
 } else {
   throw new Error('Nema MP3-a');
@@ -104,7 +104,7 @@ console.error('❌', error.message);
 const fallbackContent = `#EXTM3U
 #EXTINF:-1 tvg-logo="https://radio.hrt.hr/favicon.ico",HRT Povijest četvrtkom - Projekt Manhattan II. dio 11.03. 20:00
 https://api.hrt.hr/media/28/da/20260311-povijest-cetvrtkom-37328740-20260311200000.mp3`;
-fs.writeFileSync('U_mrezi_prvog.m3u', fallbackContent);
+fs.writeFileSync('Intervju_tjedna.m3u', fallbackContent);
 console.log('✅ Fallback M3U spreman');
 } finally {
 if (browser) {
