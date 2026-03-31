@@ -35,4 +35,4 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Dogodilo se ažurirano: ${{ github.run_id }}"
-        file_pattern: Intervju_tjedan.m3u
+        file_pattern: Intervju_tjedna.m3u
