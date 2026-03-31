@@ -46,7 +46,7 @@ const result = await page.evaluate(() => {
     }
   }
 
-  // 4. REGEX u scriptovima za MP3
+  // 3. REGEX u scriptovima za MP3
   for (const script of scripts) {
     const content = script.textContent || script.innerHTML;
     const mp3Match1 = content.match(/"https?:\/\/api\.hrt\.hr\/media[^"]*\.mp3[^"]*"/);
