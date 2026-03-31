@@ -90,7 +90,7 @@ if (result.mp3) {
 
   const imageUrl = result.image || 'https://radio.hrt.hr/favicon.ico';
   const m3uContent = `#EXTM3U
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/malimujo/HRT-Intervju-tjedna/blob/main/image00053-20211204133300.png" group-title="Slušaonica",${emisijaInfo}
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/malimujo/HRT-Intervju-tjedna/blob/main/intervjutjedna.png" group-title="Slušaonica",${emisijaInfo}
 ${result.mp3}`;
 
   fs.writeFileSync('Intervju_tjedna.m3u', m3uContent);
